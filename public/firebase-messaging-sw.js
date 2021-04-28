@@ -1,21 +1,17 @@
-// give the service worker access to firebase messaging  below scripts
- importScripts('https://www.gstatic.com/firebasejs/8.4.2/firebase-app.js');
+// give the service Worker acess to firebase cloud messaging from such scripts
+importScripts('https://www.gstatic.com/firebasejs/8.4.2/firebase-app.js');
 importScripts('https://www.gstatic.com/firebasejs/8.4.2/firebase-messaging.js');
 
-//  For Firebase JS SDK v7.20.0 and later, measurementId is optional
-// This is configuration which we copy from our project's seting 
+// This is bydefault firebase app we created ,This is firebase SDK
 const firebaseConfig = {
-    apiKey: "AIzaSyDju_pntZbVAuzRjVp7n0SQ-5_1r4Cihoc",
-    authDomain: "notificationapp-44436.firebaseapp.com",
-    projectId: "notificationapp-44436",
-    storageBucket: "notificationapp-44436.appspot.com",
-    messagingSenderId: "461558480740",
-    appId: "1:461558480740:web:2d64dc668962ad1c780471",
-    measurementId: "G-RD55XST8YV"
-};
+    apiKey: "AIzaSyDb2cMnQ4P_pRTPweE8vZnGhp8LxHLYTRY",
+    authDomain: "practicepushnotification-713d0.firebaseapp.com",
+    projectId: "practicepushnotification-713d0",
+    storageBucket: "practicepushnotification-713d0.appspot.com",
+    messagingSenderId: "652076345433",
+    appId: "1:652076345433:web:3dd11c25aa9acf51396948",
+    measurementId: "G-ZMD3EK4E98"
+  };
 
-// we can make whole above object iwith below like  that firebase.initializeApp({api: "", ... }) for clean code we do this
 firebase.initializeApp(firebaseConfig)
-
-// we  should make firebase function to retrive an instance of firebase msg
-firebase.messaging()
+firebase.messaging();

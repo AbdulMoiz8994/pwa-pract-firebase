@@ -1,13 +1,13 @@
 import React from 'react';
 import './App.css';
-import {InitialNotifications} from './Service/firebaseService'
+import {PushNotification} from './ServiceFirebase/firebaseService'
 
 
 function App() {
   return (
     <div className="App">
    <h1>Hello World</h1>
-   <button onClick={InitialNotifications}>Configure Notification</button>
+   <button onClick={PushNotification}>Configure Notification</button>
     </div>
 
   );
